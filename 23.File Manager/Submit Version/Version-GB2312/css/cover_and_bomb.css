@@ -1,0 +1,80 @@
+
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.2);
+    z-index: 9999;
+    display: none;
+}
+
+.bomb-box {
+    width: 300px;
+    /*height: 150px;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -75px;
+    margin-left: -150px;
+    border-radius: 5px;
+    z-index: 9999;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    display: none;
+}
+.bomb-box .top-bomb {
+    height: 39px;
+    padding-left: 10px;
+    line-height: 39px;
+    background-color: #f7faff;
+    border-bottom: 1px solid #c4dbfe;
+    cursor: move;
+}
+.bomb-box .top-bomb .title-bomb {
+    font-size: 14px;
+    color: #424e67;
+    padding-left: 10px;
+}
+.bomb-box .top-bomb .close-bomb {
+    float: right;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin-top: 4px;
+    margin-right:  10px;
+    line-height: 30px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #5f7094;
+    cursor: pointer;
+}
+.bomb-box .point-out {
+    padding: 25px 20px 0 20px;
+    line-height: 18px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    word-break: break-all;
+}
+.bomb-box .ctrl-bomb {
+    height: 40px;
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+}
+.bomb-box .ctrl-bomb .button-yes-bomb {
+    height: 28px;
+    width: 100px;
+    border: 1px solid #4e97ff;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 26px;
+    cursor: pointer;
+    background-color: #3b8cff;
+    color: #fff;
+}
+.bomb-box .ctrl-bomb .button-yes-bomb:hover {
+    background-color: #4e97ff;
+}

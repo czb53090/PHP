@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Microsoft YaHei", "SimSun";
+    background-color: #eff4ff;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.move-box {
+    position: absolute;
+    width: 520px;
+    height: 350px;
+    top: 50%;
+    left: 50%;
+    margin-top: -175px;
+    margin-left: -260px;
+    border-radius: 5px;
+    z-index: 9999;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    /*display: none;*/
+}
+
+.move-box .path-box-mv {
+    width: 500px;
+    height: 248px;
+    margin: 10px auto;
+    border: 1px solid #f2f2f2;
+    color: #333;
+    overflow: auto;
+}
+.move-box .top-mv {
+    height: 39px;
+    padding-left: 10px;
+    line-height: 39px;
+    background-color: #f7faff;
+    border-bottom: 1px solid #c4dbfe;
+    cursor: move;
+}
+.move-box .top-mv .title-mv {
+    font-size: 14px;
+    color: #424e67;
+    padding-left: 10px;
+}
+.move-box .top-mv .close-mv {
+    float: right;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin-top: 4px;
+    margin-right:  10px;
+    line-height: 30px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #5f7094;
+    cursor: pointer;
+}
+a:link, a:visited, a:hover, a:active {
+    color: #5f80b4;
+}
+.move-box .path-box-mv .cur-mv {
+    line-height: 30px;
+    background-color: #e5f0fb;
+    border-top: 1px solid #bbd4ef;
+    border-bottom: 1px solid #bbd4ef;
+    font-size: 14px;
+    position: relative;
+    padding-left: 26px;
+}
+.move-box .path-box-mv .cur-mv i.icon-tree {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 7px;
+    left: 5px;
+    background: url(../img/folder_c.png) no-repeat;
+}
+.move-box .path-box-mv ul {
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.move-box .path-box-mv .folder-li {
+    padding-left: 28px;
+    height: 22px;
+    line-height: 22px;
+    position: relative;
+    font-size: 14px;
+}
+.move-box .path-box-mv i.icon-folder {
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    background: url(../img/folder.png) no-repeat;
+}
+.move-box .ctrl-mv {
+    height: 40px;
+    padding-right: 10px;
+    text-align: center;
+}
+.move-box .ctrl-mv .button-yes-mv,
+.move-box .ctrl-mv .button-cancel-mv{
+    float: right;
+    height: 28px;
+    width: 100px;
+    margin-left: 20px;
+    line-height: 30px;
+    border: 1px solid #4e97ff;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.move-box .ctrl-mv .button-yes-mv {
+    line-height: 26px;
+    cursor: pointer;
+    background-color: #3b8cff;
+    color: #fff;
+}
+.move-box .ctrl-mv .button-yes-mv:hover {
+    background-color: #4e97ff;
+}
+.move-box .ctrl-mv .button-cancel-mv {
+    color: #3b8cff;
+}
+.move-box .ctrl-mv .button-cancel-mv:hover {
+    color: #77afff;
+}

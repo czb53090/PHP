@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Microsoft YaHei", "SimSun";
+    background-color: #eff4f8;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+a:link, a:visited, a:hover, a:active {
+    color: #00f;
+}
+.main {
+    width: 800px;
+    height: 520px;
+    margin: 20px auto;
+}
+.main .create-folder-box {
+    width: 100%;
+    height: 30px;
+    text-align: right;
+}
+.main .create-folder-box .create-f {
+    height: 20px;
+    font-size: 14px;
+    padding-left: 5px;
+}
+.main .create-folder-box .submit-cf {
+    width: 40px;
+    height: 22px;
+    font-size: 12px;
+}
+.main .path {
+    padding-left: 22px;
+    font-size: 16px;
+    line-height: 26px;
+    position: relative;
+}
+.main .path i.icon-tree {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    background: url(../img/folder_c.png) no-repeat;
+}
+.main .dir {
+    height: 500px;
+    border: 1px solid #d8dfea;
+    overflow: auto;
+    padding-left: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.main .dir ul {
+    position: relative;
+    padding-right: 5px;
+}
+.main .dir ul li {
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+    padding-left: 24px;
+    position: relative;
+    border-top: 1px solid #f2f6fd;
+    border-bottom: 1px solid #f2f6fd;
+    position: relative;
+    margin-top: -1px;
+}
+.main li.folder-choose {
+    position: relative;
+    z-index: 1;
+    border-top: 1px solid #daebfe;
+    border-bottom: 1px solid #daebfe;
+    background-color: #f6faff;
+    padding-left: 120px;
+}
+.main li .operation-box {
+    float: right;
+    width: 50px;
+    height: 28px;
+    position: relative;
+    color: #5fa1ff;
+    text-align: center;
+}
+.main li .operation-box .dots {
+    width: 50px;
+    height: 28px;
+    line-height: 20px;
+    cursor: pointer;
+    display: none;
+}
+.main li .operation-box .op {
+    position: absolute;
+    top: 24px;
+    right: 0;
+    width: 80px;
+    height: 78px;
+    z-index: 9999;
+    border: 1px solid #c0d9fe;
+    border-radius: 4px;
+    background-color: #ffffff;
+    display: none;
+}
+.main li .operation-box .op a {
+    display: block;
+    width: 80px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 14px;
+}
+.main .dir li a.delete-ctrl,
+.main .dir li a.rename-ctrl,
+.main .dir li a.move-ctrl {
+    color: #3b8cff;
+    float: right;
+    font-size: 12px;
+}
+.main .dir li i.icon-folder, .main .dir li i.icon-file {
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 5px;
+    left: 4px;
+}
+.main .dir li i.icon-folder {
+    background: url(../img/folder.png) no-repeat;
+}
+.main .dir li i.icon-file {
+    background: url(../img/file.png) no-repeat;
+}
+.rename-box {
+    position: absolute;
+    top: 0;
+    left: 24px;
+    z-index: 10;
+    width: 680px;
+    height: 26px;
+    padding-top: 2px;
+    background-color: #fff;
+    line-height: 28px;
+    display: none;
+}
+.rename-box .text-rn {
+    float: left;
+    width: 230px;
+    height: 20px;
+    border: 2px solid #a3cafe;
+    border-radius: 3px;
+    font-size: 14px;
+    padding-left: 4px;
+    margin-right: 5px;
+}
+.rename-box .button-rn {
+    float: left;
+    font-family: "SimSun";
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 5px;
+    text-align: center;
+    border: 1px solid #cae1fd;
+    background-color: #f0f8fd;
+    color: #3c8cff;
+    font-size: 12px;
+    font-weight: 700;
+    outline-style: none;
+    cursor: pointer;
+}
+
