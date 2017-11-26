@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+
+<link type="text/css" rel="stylesheet" href="1.Form.css"></link>
+<script type="text/javascript" src="1.Form.js"></script>
+
+</head>
+
+<body>
+<div id="div_1">
+	<img src="Form.jpg" id="img_1" />
+    <form id="form_1" method="post" action="2.Form.php" >
+        <table id="table_1" >
+        	<tr>
+        	  <td></td>
+            	<td>性别：</td>
+            	<td>
+           	  		<input name="sex" type="radio" id="male" value="男" />
+                    <!-- 也可以默认选上，就不用进行判断 checked="checked" -->
+              		<label for="male">男</label>
+              		<input type="radio" name="sex" id="female" value="女"/>
+             		<label for="female">女</label>
+           		 </td>
+          	</tr>
+         	<tr>
+         	  <td></td>
+            	<td>年龄：</td>
+            	<td>
+              		<select name="age" id="age">
+                    	<option>请选择</option>
+              			<option>17岁</option>
+              			<option>18岁</option>
+              			<option>19岁</option>
+              			<option>20岁</option>
+              			<option>21岁</option>
+              			<option>22岁</option>
+              			<option>23岁</option>
+                        <option>24岁</option>
+                        <option>25岁</option>
+              		</select>
+            	</td>
+            </tr>
+            <tr>
+              <td></td>
+                <td>学历：</td>
+                <td>
+                    <select name="xueli" id="xueli">
+                    <option>请选择</option>
+                    <option>大专</option>
+                    <option>本科</option>
+                    <option>研究生</option>
+                    <option>博士</option>
+                    </select>
+                </td>
+          	</tr>
+         	<tr>
+         	  <td></td>
+                <td>专业：</td>
+                <td>
+                    <input type="text" id="major" name="major"/></td>
+            </tr>
+            <tr>
+              <td></td>
+                <td>是否学生干部：</td>
+                <td>
+                    <input type="radio" id="ganbu_yes" name="ganbu" value="是" />
+                    <label for="ganbu_yes">是</label>
+                    <input type="radio" id="ganbu_no" name="ganbu" value="否"/>
+                    <label for="ganbu_no">否</label>
+                </td>
+            </tr>
+            <tr>
+              <td></td>
+                <td>兴趣爱好：</td>
+                <td>
+                    <input type="checkbox" id="reed" name="hobit[]" value="读书" />
+                    <label for="reed">读书</label>
+                    <input type="checkbox" id="news" name="hobit[]" value="上网新闻" />
+                    <label for="news">上网新闻</label>
+                    <input type="checkbox" id="games" name="hobit[]" value="游戏" />
+                    <label for="games">游戏</label>
+                    <input type="checkbox" id="sport" name="hobit[]" value="体育运动" />
+                    <label for="sport">体育运动</label>
+                    <input type="checkbox" id="music" name="hobit[]" value="音乐" />
+                    <label for="music">音乐</label>
+                    <input type="checkbox" id="dancing" name="hobit[]" value="舞蹈" />
+                    <label for="dancing">舞蹈</label>
+                    <div></div>
+                    <input type="checkbox" id="travel" name="hobit[]" value="旅游" />
+                    <label for="travel">旅游</label>
+                    <input type="checkbox" id="shoot" name="hobit[]" value="摄影" />
+                    <label for="shoot">摄影</label>
+                    <input type="checkbox" id="draw" name="hobit[]" value="书画" />
+                    <label for="draw">书画</label>
+                    <input type="checkbox" id="movie" name="hobit[]" value="看电影" />
+                    <label for="movie">看电影</label>
+                    <input type="checkbox" id="other" name="hobit[]" value="其他" />
+                    <label for="other">其他</label>
+                </td>
+            </tr>
+            <tr>
+              	<td></td>
+                <td>阅读频率：</td>
+                <td>
+                    <input type="radio" id="never_reed" name="reed_rate" value="从不阅读" />
+                    <label for="never_reed">从不阅读</label>
+                    <input type="radio" id="little_reed" name="reed_rate" value="极少阅读" />
+                    <label for="little_reed">极少阅读</label>
+                    <input type="radio" id="occasionally_reed" name="reed_rate" value="偶尔一读" />
+                    <label for="occasionally_reed">偶尔一读</label>
+                    <input type="radio"  id="everyday_reed" name="reed_rate" value="每天坚持"/>
+                    <label for="everyday_reed">每天坚持</label>
+				</td>
+            </tr>
+            <tr>
+              	<td></td>
+                <td>是否兼职：</td>
+                <td>
+                    <input type="radio" id="never_work" name="work_time" value="从不兼职" />
+                    <label for="never_work">从不兼职</label>
+                    <input type="radio" id="occasionally_work" name="work_time" value="偶尔兼职" />
+                    <label for="occasionally_work">偶尔兼职</label>
+                    <input type="radio" id="longtime_work" name="work_time" value="长期兼职" />
+                	<label for="longtime_work">长期兼职</label>
+            	</td>
+            </tr>
+            <tr>
+              <td></td>
+                <td></td>
+                <td>
+                	<input type="submit" name="submit" id="submit" value="提交" onclick="return Check_All()" />
+                	<span>&nbsp</span>
+                	<input type="button" name="reset" id="reset" value="重置" onclick="location.reload()"/>
+                </td>
+            </tr>
+  		</table>
+	</form>
+</div>
+</body>
+</html>

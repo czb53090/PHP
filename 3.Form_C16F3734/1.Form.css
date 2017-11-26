@@ -1,0 +1,44 @@
+#div_1{
+	margin: 0 auto;
+	width: 900px;
+	border: 4px solid #99FFFF;
+}
+#img_1{
+	border-bottom:2px solid #99FFFF;
+	width: 900px;
+	height: 220px;
+}
+#table_1{
+	width: 700px;
+	margin: 0 auto;
+	border-spacing: 0px;
+}
+tr{
+	height: 50px;
+}
+tr:nth-child(2n-1){
+	background-color: #D0FFFF;
+}
+td:nth-child(3n-1){
+	font-weight: bold;
+}
+td:first-child{
+	width: 30px;
+}
+td:nth-child(2){
+	width: 140px;
+}
+td:nth-child(3){
+	width: 524px;
+}
+#major{
+	 width: 240px;
+}
+#submit,#reset{
+	width: 55px;
+	height: 22px;
+	border: 2px solid #3366FF;
+	font-weight: bold;
+	font-size: 13px;
+	background-color: #00CCFF;
+}
